@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://www.frontendmentor.io/solutions/advice-generator-app-YuFolNA3Yo](https://www.frontendmentor.io/solutions/advice-generator-app-YuFolNA3Yo)
-- Live Site URL: [https://advicegenerator-app.chrisnowicki.io] (https://advicegenerator-app.chrisnowicki.io)
+- Live Site URL: [https://advicegenerator-app.chrisnowicki.io](https://advicegenerator-app.chrisnowicki.io)
 - Advice Slip API: [https://api.adviceslip.com/](https://api.adviceslip.com/)
 
 ## My process
