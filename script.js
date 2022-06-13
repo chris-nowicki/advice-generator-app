@@ -1,7 +1,7 @@
 //function to get information from the Advice Slip API
 const adviceSlip = async () => {
     //fetches the advice slip
-    let adviceSlip = await fetch("http://api.adviceslip.com/advice")
+    let adviceSlip = await fetch("https://api.adviceslip.com/advice")
     let adviceData =  await adviceSlip.json()
 
     // set variables for the the API data
