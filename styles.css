@@ -100,10 +100,9 @@ body {
     }
 
     .card h1 {
-        margin-top: 48px;
-        margin-bottom: 24px;
-        color: #53FFAA;
-        text-align: center;
+        font-size: 11px;
+        line-height: 15.03px;
+        letter-spacing: 3.45714px;
     }
 
     .card  p {
@@ -115,7 +114,6 @@ body {
     .card h1 {
         font-size: 11px;
         line-height: 15px;
-        text-align: center;
         letter-spacing: 3.45714px;
     }
 }
@@ -136,8 +134,7 @@ body {
     }
 
     .card  p {
-        line-height: 38px;
-        text-align: center;
+        line-height: 38.25px;
         letter-spacing: -0.3px;
     }
 }
