@@ -4,7 +4,7 @@
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
 #Front End Mentor Design Files
-design/
+design/figma/
 style-guide.md
 
 # User-specific files
