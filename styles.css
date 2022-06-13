@@ -1,7 +1,7 @@
+/* reset */
 * {
     margin: 0px;
     padding: 0px;
-    
 }
 
 /* font */
@@ -78,10 +78,6 @@ body {
     box-shadow: 0px 0px 40px #53FFAA;
     cursor: pointer;
 }
-
-/* attribution */
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
 
 /* responsive */
 @media only screen and (max-width: 375px) {
