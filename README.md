@@ -5,7 +5,6 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
@@ -15,11 +14,8 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
-
-### The challenge
+The challenge was to build out this advice generator app using the Advice Slip API and get it looking as close to the design as possible.
 
 Users should be able to:
 
@@ -35,6 +31,7 @@ Users should be able to:
 
 - Solution URL: [https://www.frontendmentor.io/solutions/advice-generator-app-YuFolNA3Yo](https://www.frontendmentor.io/solutions/advice-generator-app-YuFolNA3Yo)
 - Live Site URL: [https://chris-nowicki.github.io/advice-generator-app/](https://chris-nowicki.github.io/advice-generator-app/)
+- Advice Slip API: [https://api.adviceslip.com/](https://api.adviceslip.com/)
 
 ## My process
 
@@ -50,29 +47,32 @@ the way I wanted I coded in the Javascript to connect with the [Advice Slip API]
 
 ### What I learned
 
-I learned more about the `transform: translateY(50%);` in my css properties to get the dice icon exactly where I wanted it.  Other than that 
+I learned more about the `transform: translateY(50%);` in my css properties to get the dice icon exactly where I wanted it.  Other than that it was continued
+learning and building upon my CSS, HTML, and Javascript skills.
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
+Code that I am proud of:
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+//function to get information from the Advice Slip API
+const adviceSlip = async () => {
+    //fetches the advice slip
+    let adviceSlip = await fetch("https://api.adviceslip.com/advice")
+    let adviceData =  await adviceSlip.json()
+
+    // set variables for the the API data
+    let slip = adviceData.slip
+    let adviceID = slip.id
+    let advice = slip.advice
+
+    // update the HTML with the advice slip data
+    document.getElementById("advice-number").innerHTML = adviceID
+    document.getElementById("advice-text").innerHTML = advice
 }
 ```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+Since my last challenge, [qr-code-component](https://github.com/chris-nowicki/qr-code-component), I definitely have grown in *flexbox* as I'd hoped.  Moving forward I'd like to focus on
+Javascript and fetch methods for connect to API's as well as [Bootstrap](https://getbootstrap.com/) and/or [Tailwind CSS](https://tailwindcss.com/).
 
 ### Useful resources
 
@@ -82,4 +82,3 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 - Frontend Mentor - [@chris-wix](https://www.frontendmentor.io/profile/chris-nowicki)
 - Twitter - [@iamwix](https://www.twitter.com/iamwix)
-
