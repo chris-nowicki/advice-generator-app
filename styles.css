@@ -7,6 +7,7 @@
 /* font */
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
 
+/* global */
 body {
     background-color: #202733;
     font-family: 'Manrope', sans-serif;
@@ -14,6 +15,7 @@ body {
     font-weight: 800;
 }
 
+/* page wrapper */
 .page-wrapper {
     display: flex;
     flex-direction: column;
@@ -22,18 +24,28 @@ body {
     height: 100vh;
 }
 
-.card-wrapper {
+/* card container */
+.card-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 540px;
     height: 364px;
+}
+
+/* card */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
     background-color: #313A48;
     border-radius: 15px;
     box-shadow: 30px 50px 80px rgba(0, 0, 0, 0.100202);
+
 }
 
-.card-wrapper h1 {
+.card h1 {
     margin-top: 48px;
     margin-bottom: 24px;
     color: #53FFAA;
@@ -43,15 +55,90 @@ body {
     letter-spacing: 4.08571px;
 }
 
-.advice-text {
-    line-height: 38px;
-    text-align: center;
-    letter-spacing: -0.3px;
+.card  p {
     color: #CEE3E9;
+    text-align: center;
     margin-left: 48px;
     margin-right: 48px;
+    margin-bottom: 40px;
+}
+
+.divider {
+    margin-bottom: 72px;
+}
+
+.dice {
+    position: absolute;
+    bottom: 0px;
+    height: 64px;
+    background-color: #53FFAA;
+    border-radius: 50%;
+    transform: translateY(50%);
+}
+
+.dice img {
+    padding: 20px;
+}
+
+.dice:hover {
+    box-shadow: 0px 0px 40px #53FFAA;
+    cursor: pointer;
 }
 
 /* attribution */
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+/* responsive */
+@media only screen and (max-width: 375px) {
+    .card {
+        width: 343px;
+    }
+
+    .divider {
+        content: url("/images/pattern-divider-mobile.svg")
+    }
+
+    .card h1 {
+        margin-top: 48px;
+        margin-bottom: 24px;
+        color: #53FFAA;
+        text-align: center;
+    }
+
+    .card  p {
+        line-height: 33px;
+        letter-spacing: -0.257143px;
+        font-size: 24px;
+    }
+
+    .card h1 {
+        font-size: 11px;
+        line-height: 15px;
+        text-align: center;
+        letter-spacing: 3.45714px;
+    }
+}
+
+@media only screen and (min-width: 376px) {
+    .card {
+        width: 540px;
+    }
+
+    .divider {
+        content: url("/images/pattern-divider-desktop.svg");
+    }
+
+    .card h1 {
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: 4.08571px;
+    }
+
+    .card  p {
+        line-height: 38px;
+        text-align: center;
+        letter-spacing: -0.3px;
+    }
+}
+
