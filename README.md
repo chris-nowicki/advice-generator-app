@@ -76,8 +76,7 @@ Javascript and fetch methods for connect to API's as well as [Bootstrap](https:/
 
 ### Useful resources
 
-- [CSS-TRICKS](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - My goto guide to remember CSS Flexbox Properties
-
+- [CSS-TRICKS](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - My go to guide to remember CSS Flexbox Properties.
 ## Author
 
 - Frontend Mentor - [@chris-wix](https://www.frontendmentor.io/profile/chris-nowicki)
