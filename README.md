@@ -47,8 +47,9 @@ the way I wanted I coded in the Javascript to connect with the [Advice Slip API]
 
 ### What I learned
 
-I learned more about the `transform: translateY(50%);` in my css properties to get the dice icon exactly where I wanted it.  Other than that it was continued
+I learned more about the `transform: translateY(50%);` in my css properties to get the dice icon exactly where I wanted it.  I also learned more about responsive design.  Other than that it was continued
 learning and building upon my CSS, HTML, and Javascript skills.
+
 
 Code that I am proud of:
 ```js
