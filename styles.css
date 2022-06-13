@@ -57,7 +57,6 @@ body {
 .card  p {
     color: #CEE3E9;
     text-align: center;
-
     margin-bottom: 40px;
 }
 
@@ -131,6 +130,7 @@ body {
     .card  p {
         line-height: 38.25px;
         letter-spacing: -0.3px;
+        font-size: 24px;
         margin-left: 48px;
         margin-right: 48px;
     }
