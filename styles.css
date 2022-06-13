@@ -42,7 +42,6 @@ body {
     background-color: #313A48;
     border-radius: 15px;
     box-shadow: 30px 50px 80px rgba(0, 0, 0, 0.100202);
-
 }
 
 .card h1 {
@@ -58,8 +57,7 @@ body {
 .card  p {
     color: #CEE3E9;
     text-align: center;
-    margin-left: 48px;
-    margin-right: 48px;
+
     margin-bottom: 40px;
 }
 
@@ -109,13 +107,10 @@ body {
         line-height: 33px;
         letter-spacing: -0.257143px;
         font-size: 24px;
+        margin-left: 24px;
+        margin-right: 24px;
     }
 
-    .card h1 {
-        font-size: 11px;
-        line-height: 15px;
-        letter-spacing: 3.45714px;
-    }
 }
 
 @media only screen and (min-width: 376px) {
@@ -136,6 +131,8 @@ body {
     .card  p {
         line-height: 38.25px;
         letter-spacing: -0.3px;
+        margin-left: 48px;
+        margin-right: 48px;
     }
 }
 
