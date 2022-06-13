@@ -96,7 +96,7 @@ body {
     }
 
     .divider {
-        content: url("images/pattern-divider-mobile.svg")
+        content: url("./images/pattern-divider-mobile.svg")
     }
 
     .card h1 {
@@ -126,7 +126,7 @@ body {
     }
 
     .divider {
-        content: url("images/pattern-divider-desktop.svg");
+        content: url("./images/pattern-divider-desktop.svg");
     }
 
     .card h1 {
